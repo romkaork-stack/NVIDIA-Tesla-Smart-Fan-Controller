@@ -1,0 +1,23 @@
+## Скрываем результаты компиляции и сборки
+[Db]in/
+[Ob]ject/
+obj/
+bin/
+
+## Временные файлы кэша .NET
+*.json
+!*.csproj
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Локальные файлы конфигурации (наш config.txt у каждого свой)
+config.txt
+
+## Кэш операционной системы и сред разработки
+.vs/
+.idea/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
