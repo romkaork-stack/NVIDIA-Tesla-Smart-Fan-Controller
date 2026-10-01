@@ -1,3 +1,8 @@
+// ============================================================================
+// Project: NVIDIA Tesla Smart Fan Controller (Arduino Firmware)
+// Co-created with: Google Gemini (AI Assistant)
+// ============================================================================
+
 // 25 kHz PWM configuration, Failsafe protection, and RPM calculator
 volatile unsigned int pulseCount = 0;
 unsigned long lastRPMCalc = 0;
