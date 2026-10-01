@@ -1,3 +1,8 @@
+// ============================================================================
+// Project: NVIDIA Tesla Smart Fan Controller
+// Created by: romkaork-stack & Google Gemini (AI Assistant)
+// Description: Low-level GPU cooling controller using NVML and WinForms
+// ============================================================================
 using System;
 using System.Collections.Generic;
 using System.Drawing;
