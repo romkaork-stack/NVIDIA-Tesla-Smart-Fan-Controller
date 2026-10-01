@@ -6,15 +6,15 @@ An automatic, ultra-lightweight smart fan controller for passive server-grade GP
 
 ## 📸 Screenshots
 
+<p float="left" align="center">
+  <img src="images/settings.png" width="48%" alt="Cooling Curve Editor" />
+  <img src="images/monitor.png" width="48%" alt="Real-Time Streaming Graph" />
+</p>
+
 <p align="center">
   <img src="images/graph.png" alt="Animated Tray Icon Grid" title="Animated Tray Icon Grid" />
   <br>
   <i>Animated Tray Icon Grid</i>
-</p>
-
-<p float="left" align="center">
-  <img src="images/settings.png" width="48%" alt="Cooling Curve Editor" />
-  <img src="images/monitor.png" width="48%" alt="Real-Time Streaming Graph" />
 </p>
 
 <p float="left">
