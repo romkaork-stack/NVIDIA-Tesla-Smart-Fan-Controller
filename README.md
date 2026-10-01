@@ -9,7 +9,7 @@ An automatic, ultra-lightweight smart fan controller for passive server-grade GP
 This project was born out of a very specific hardware challenge. I wanted to build a compact, high-performance AI and media node using a **Lenovo ThinkCentre M920x Tiny** micro-PC and a low-profile, passive enterprise accelerator — the **NVIDIA Tesla A2**. 
 
 <p align="center">
-  <img src="images/hardware_angle.png" alt="NVIDIA Tesla A2 inside Lenovo M920x" width="80%" />
+  <img src="images/hardware_angle.jpg" alt="NVIDIA Tesla A2 inside Lenovo M920x" width="80%" />
   <br>
   <i>NVIDIA Tesla A2 passive heatsink aligned with the chassis exhaust</i>
 </p>
