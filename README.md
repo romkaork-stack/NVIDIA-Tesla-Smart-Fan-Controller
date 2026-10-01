@@ -44,6 +44,16 @@ The result is a whisper-quiet mini-PC at idle, and a perfectly cooled, stable en
   <span style="display: inline-block; width: 48%; text-align: center;"><i>Real-Time Temperature & PWM Graph</i></span>
 </p>
 
+<p float="left" align="center">
+  <img src="3D_Models/shroud_view.jpg" width="48%" alt="Fan Shroud 3D Model" />
+  <img src="3D_Models/shroud_internal.jpg" width="48%" alt="Internal Airflow Duct Geometry" />
+</p>
+
+<p float="left">
+  <span style="display: inline-block; width: 48%; text-align: center;"><i>Custom Fan Shroud 3D Model</i></span>
+  <span style="display: inline-block; width: 48%; text-align: center;"><i>Internal Airflow Duct Geometry (Autodesk Fusion)</i></span>
+</p>
+
 ---
 
 ## ✨ Features
