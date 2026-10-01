@@ -1,20 +1,38 @@
 # NVIDIA Tesla Smart Fan Controller 🌬️🤖
 
-An automatic, ultra-lightweight smart fan controller designed specifically for passive server-grade graphics cards (**NVIDIA Tesla A2, P4, T4**, etc.) installed in desktop PCs. Built with a high-performance **.NET WinForms (NVML)** background engine and an **Arduino Nano** hardware driver.
+An automatic, ultra-lightweight smart fan controller for passive server-grade GPUs (**NVIDIA Tesla A2, P4, T4**, etc.) in desktop PCs, built with a **.NET WinForms (NVML)** engine and an **Arduino Nano** driver.
 
-This utility eliminates the cooling headache of passive enterprise cards by dynamically calculating fan speed based on real-time GPU core temperatures using low-level API, featuring a slick Task Manager-style real-time monitor.
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="images/graph.png" alt="Animated Tray Icon Grid" title="Animated Tray Icon Grid" />
+  <br>
+  <i>Animated Tray Icon Grid</i>
+</p>
+
+<p float="left" align="center">
+  <img src="images/settings.png" width="48%" alt="Cooling Curve Editor" />
+  <img src="images/monitor.png" width="48%" alt="Real-Time Streaming Graph" />
+</p>
+
+<p float="left">
+  <span style="display: inline-block; width: 48%; text-align: center;"><i>Cooling Curve Editor UI</i></span>
+  <span style="display: inline-block; width: 48%; text-align: center;"><i>Real-Time Temperature & PWM Graph</i></span>
+</p>
 
 ---
 
 ## ✨ Features
-* **Zero-CPU Overhead Monitoring:** Powered by the official `nvml.dll` (NVIDIA Management Library). It directly queries the driver in-memory, bypassing heavy shell execution processes like `nvidia-smi`.
-* **Hardware Failsafe Protection:** If Windows freezes or the background application is closed, the Arduino watchdog self-activates after 6 seconds and spins the fan up to 100% to save your GPU from overheating.
-* **Silent 25 kHz PWM Signal:** Hardware timers on the Arduino Nano are reconfigured to output a true 25 kHz frequency. This completely eliminates high-pitched motor humming or buzzing at low fan speeds.
-* **Animated Tray Icon:** Features a mini real-time hardware monitor graph right next to your Windows clock, allowing you to choose between tracking **GPU Load**, **GPU Temperature**, or **Fan Speed (RPM)**.
-* **DoubleClick Real-Time Monitor:** Double-clicking the tray icon unleashes a broad, beautiful, Task Manager-style streaming graph displaying synchronized curves for both core temperature and PWM fan response.
-* **Interactive Cooling Curve UI:** Right-click the tray icon to open an advanced GUI graph editor. Drag the **Min** and **Max** milestone nodes with your mouse to adjust your custom cooling targets instantly without reflashing the Arduino.
+* **Zero-CPU Overhead Monitoring:** Uses `nvml.dll` to directly query driver memory without heavy shell execution.
+* **Hardware Failsafe Protection:** Arduino watchdog spins the fan to 100% if the app closes or freezes for 6 seconds.
+* **Silent 25 kHz PWM Signal:** Reconfigured hardware timers eliminate motor buzzing at low speeds.
+* **Animated Tray Icon & Monitor:** Real-time tracking and double-click streaming graphs for temperature and PWM.
+* **Interactive Cooling Curve UI:** Easily adjust custom cooling targets via the graphical editor.
 
 ---
+
 
 ## 🔌 Hardware Wiring Diagram
 * **Fan GND (Black/Grey)** -> **Arduino GND** AND **12V Power Supply Minus (-)** (*Mandatory: Common ground connection!*)
