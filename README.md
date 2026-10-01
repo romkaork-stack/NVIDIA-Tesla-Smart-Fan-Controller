@@ -24,6 +24,15 @@ The C# Windows application silently monitors the GPU core via the native **NVIDI
 
 The result is a whisper-quiet mini-PC at idle, and a perfectly cooled, stable enterprise GPU under full load!
 
+### 🌪️ Why Exhaust (Pull) Configuration Instead of Intake (Push)?
+A common question in cooling design is why this system is set to pull hot air *away* from the GPU heatsink and exhaust it out of the chassis, rather than blowing cold air directly *onto* it. There are three major engineering reasons for this setup, **backed by real-world thermal testing**:
+
+> ⚠️ **Empirical Proof:** During development, an intake (push) configuration was fully tested using the exact same blower fan. Under a heavy compute/AI load, the results were disastrous — the GPU core temperature rapidly broke through **80°C** and kept climbing due to air stagnation. Switching to the exhaust (pull) layout instantly dropped and stabilized the temps at **60-63°C**.
+
+1. **Server Heatsink Aerodynamics:** The passive radiator on the Tesla A2 is geometrically optimized for straight-through, tunnel-like airflow. High-pressure blower fans (shrouded laptop impellers) work significantly better by creating a low-pressure vacuum inside the shroud, smoothly drawing air *through* the dense fins along their native path, rather than hitting them at a dead-angle and creating turbulent stall zones.
+2. **Component-Wide Thermal Relief:** By vacuuming air out through the back, cold ambient air is naturally drawn into the tiny Lenovo chassis through its side ventilations. This airflow travels across the entire surface of the Tesla A2, successfully cooling not just the core chip, but also the VRAM and critical VRM power delivery zones before being ejected.
+3. **Preventing the "Oven Effect":** Blowing air *into* the heatsink would trap high-velocity, 65°C+ air inside the incredibly tight spaces of the micro-PC, heating up adjacent system memory, NVMe SSDs, and the motherboard components. The exhaust configuration cleanly isolates the GPU's thermal loop from the rest of the host system.
+
 ---
 
 ## 📸 Screenshots
