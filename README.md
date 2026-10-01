@@ -51,7 +51,7 @@ An automatic, ultra-lightweight smart fan controller for passive server-grade GP
 ### 2. Get the Windows App
 
 <p align="left">
-  <a href="[https://github.com](https://github.com/romkaork-stack/NVIDIA-Tesla-Smart-Fan-Controller/releases/tag/v1.0.0)">
+  <a href="https://github.com/romkaork-stack/NVIDIA-Tesla-Smart-Fan-Controller/releases/tag/v1.0.0">
     <img src="https://shields.io" alt="Download Executable" />
   </a>
 </p>
