@@ -48,19 +48,13 @@ An automatic, ultra-lightweight smart fan controller for passive server-grade GP
 1. Open the sketch provided in the `/Arduino` directory inside your Arduino IDE.
 2. Select your **Arduino Nano** (ATmega328P) board and upload the code.
 
-### 2. Compile the Windows App
-To build the fully portable, single-executable application, run the following commands in your terminal inside the `/WindowsApp` folder:
-```bash
-dotnet add package Microsoft.Win32.Registry
-dotnet publish -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true
-```
-Grab your standalone `TeslaFanController.exe` from the `bin/Release/.../publish/` folder and drop it into your preferred storage directory.
+### 2. Get the Windows App
+Download the pre-compiled executable directly or compile it from source within the `/WindowsApp` folder using .NET CLI commands.
 
 ### 3. Execution & Configuration
-1. Run the app (no administrator privileges required for core NVML reading!).
-2. The application will generate a well-commented `config.txt` inside its local directory.
-3. Right-click the animated tray graph, select **"Settings Panel..."**, scan your active hardware COM ports, and fine-tune your cooling lines.
-4. Check **"Start with Windows"** in the context menu to safely automate your GPU cooling on system startup.
+1. Run the app (no admin rights needed for core NVML reading).
+2. Configure `config.txt` and fine-tune cooling lines via the tray settings panel.
+3. Enable **"Start with Windows"** to automate GPU cooling on startup.
 
 ---
 
