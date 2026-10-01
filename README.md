@@ -49,7 +49,26 @@ An automatic, ultra-lightweight smart fan controller for passive server-grade GP
 2. Select your **Arduino Nano** (ATmega328P) board and upload the code.
 
 ### 2. Get the Windows App
-Download the pre-compiled executable directly or compile it from source within the `/WindowsApp` folder using .NET CLI commands.
+
+<p align="left">
+  <a href="https://github.com">
+    <img src="https://shields.io" alt="Download Executable" />
+  </a>
+</p>
+
+Download the pre-compiled executable directly using the button above, or compile it from source within the project folder using .NET CLI commands:
+
+<details>
+<summary>🛠️ Click to view Manual Compilation Guide</summary>
+
+Navigate to your project directory in terminal and run:
+```bash
+dotnet add package Microsoft.Win32.Registry
+dotnet publish -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true
+```
+Grab your standalone `TeslaFanController.exe` from the `bin/Release/.../publish/` folder and drop it into your preferred storage directory.
+</details>
+
 
 ### 3. Execution & Configuration
 1. Run the app (no admin rights needed for core NVML reading).
