@@ -56,11 +56,27 @@ The result is a whisper-quiet mini-PC at idle, and a perfectly cooled, stable en
 ---
 
 
-## 🔌 Hardware Wiring Diagram
-* **Fan GND (Black/Grey)** -> **Arduino GND** AND **12V Power Supply Minus (-)** (*Mandatory: Common ground connection!*)
-* **Fan 12V (Red)** -> **12V Power Supply Plus (+)**
-* **Fan PWM (Blue)** -> **Pin D9 on Arduino Nano**
-* **Fan Tachometer / Tach (Yellow/White)** -> **Pin D2 on Arduino Nano** (*Hardware Interrupt INT0*)
+## 🔌 Hardware Specs & Wiring Diagram
+
+The entire cooling system is highly efficient and runs **completely off a single USB port (5V)**, eliminating the need for any external 12V power bricks. 
+
+### Hardware components used:
+* **Arduino Nano** (ATmega328P) wrapped in Kapton tape for insulation.
+* **5V Laptop Blower Fan** (with PWM support).
+* Standard **Mini-USB cable** for simultaneous 5V power supply and serial data transfer from Windows.
+
+### 📐 Wiring Layout:
+* **Fan GND** -> **Arduino GND**
+* **Fan 5V VCC** -> **Arduino 5V pin**
+* **Fan PWM** -> **Arduino Pin D9**
+* **Fan Tachometer / Tach** -> **Arduino Pin D2** (*Hardware Interrupt*)
+
+<p align="center">
+  <img src="images/hardware_wiring_real.jpg" alt="Real hardware connections and insulation" width="60%" />
+  <br>
+  <i>Real-world hardware setup: Arduino Nano in Kapton tape powered via Mini-USB</i>
+</p>
+
 
 ---
 
