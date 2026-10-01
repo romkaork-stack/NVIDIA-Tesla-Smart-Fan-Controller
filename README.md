@@ -66,6 +66,9 @@ The result is a whisper-quiet mini-PC at idle, and a perfectly cooled, stable en
 
 ## 🚀 Quick Start / Deployment
 
+### 0. 3D Printing
+Print the custom fan shroud located in the `/3D_Models` folder using PETG or ABS filament (recommended due to GPU operating temperatures) to securely mount your external fan.
+
 ### 1. Flash the Arduino
 1. Open the sketch provided in the `/Arduino` directory inside your Arduino IDE.
 2. Select your **Arduino Nano** (ATmega328P) board and upload the code.
