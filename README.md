@@ -104,3 +104,8 @@ Grab your standalone `TeslaFanController.exe` from the `bin/Release/.../publish/
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🤝 Credits
+This project, including the entire .NET background application, low-level NVML logic, interactive GUI, and custom Arduino firmware, was co-created, designed, and fully written in collaboration with **Google Gemini**.
