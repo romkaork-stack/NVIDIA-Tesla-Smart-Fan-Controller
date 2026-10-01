@@ -8,6 +8,12 @@ An automatic, ultra-lightweight smart fan controller for passive server-grade GP
 
 This project was born out of a very specific hardware challenge. I wanted to build a compact, high-performance AI and media node using a **Lenovo ThinkCentre M920x Tiny** micro-PC and a low-profile, passive enterprise accelerator — the **NVIDIA Tesla A2**. 
 
+<p align="center">
+  <img src="images/hardware_angle.png" alt="NVIDIA Tesla A2 inside Lenovo M920x" width="80%" />
+  <br>
+  <i>NVIDIA Tesla A2 passive heatsink aligned with the chassis exhaust</i>
+</p>
+
 However, two major roadblocks immediately appeared:
 1. **Locked Embedded Controller (EC):** The Lenovo motherboard completely blocks any third-party software control over the system fan bus. Utilities like SpeedFan, FanCtrl, or Notebook FanControl are entirely powerless here.
 2. **Passive Server Cooling:** Server GPUs like the Tesla A2 do not have an onboard fan connector or fan controller. They rely purely on the massive airflow of server racks, meaning that inside a desktop or mini-PC, the card would quickly overheat and throttle under any AI or compute load.
